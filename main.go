@@ -22,7 +22,7 @@ type Response struct {
 // @Success 200 {object} Response
 // @Router / [get]
 func sayHelloHandler(w http.ResponseWriter, r *http.Request) {
-	response := Response{"Hola Mundo desde RPC en Go"}
+	response := Response{"Hello World from RPC in Go"}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
@@ -38,11 +38,12 @@ func sayHelloHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", sayHelloHandler)
 
-	// Ruta para servir Swagger UI
-	http.Handle("/swagger/", httpSwagger.WrapHandler)
+	// Path to serve Swagger UI
+	http.Handle("/docs/", httpSwagger.WrapHandler)
 
 	port := ":8080"
-	fmt.Println("Servidor escuchando en http://localhost" + port)
+	fmt.Println("Server running in: http://localhost" + port)
+	fmt.Println("Swagger documentation in: http://localhost" + port + "/docs")
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
 		fmt.Println("Error al iniciar el servidor:", err)

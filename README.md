@@ -51,7 +51,7 @@ Open a browser and enter to
 
 
 Or to review the endpoints in Swagger enter to
-[http://localhost:8080/swagger](http://localhost:8080/swagger)
+[http://localhost:8080/docs](http://localhost:8080/docs)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
@@ -66,4 +66,4 @@ Open a browser and enter to
 
 
 Or to review the endpoints in Swagger enter to
-[http://localhost:8080/swagger](http://localhost:8080/swagger)
+[http://localhost:8080/docs](http://localhost:8080/docs)
