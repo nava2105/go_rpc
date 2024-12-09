@@ -59,7 +59,7 @@ docker pull na4va4/go_rpc
 ```
 Start a container from the image
 ```
-docker run -p 4567:4567 na4va4/go_rpc
+docker run -p 8080:8080 na4va4/go_rpc
 ```
 Open a browser and enter to
 [http://localhost:8080](http://localhost:8080)
