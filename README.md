@@ -25,6 +25,7 @@ The server listens on port **8080** and responds to all incoming HTTP GET reques
 ***  
 A list of technologies used within the project:
 - [Go (Golang)](https://golang.org): Version 1.21+
+- [Swagger](https://swagger.io/docs): Version 0.0.2
 ## Installation
 ***  
 Follow these steps to install and run the project:
@@ -47,6 +48,10 @@ go run main.go
 ```
 Open a browser and enter to
 [http://localhost:8080](http://localhost:8080)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:8080/swagger](http://localhost:8080/swagger)
 ### Via Docker-hub
 Pull the image from Docker-hub
 ```
@@ -58,3 +63,7 @@ docker run -p 4567:4567 na4va4/go_rpc
 ```
 Open a browser and enter to
 [http://localhost:8080](http://localhost:8080)
+
+
+Or to review the endpoints in Swagger enter to
+[http://localhost:8080/swagger](http://localhost:8080/swagger)

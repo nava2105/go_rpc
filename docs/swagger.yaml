@@ -1,0 +1,28 @@
+basePath: /
+definitions:
+  main.Response:
+    properties:
+      message:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: Simple Go API that returns a message in JSON.
+  title: RPC API
+  version: "1.0"
+paths:
+  /:
+    get:
+      description: Return a JSON object with a welcome message from rpc.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.Response'
+      summary: Returns a welcome message
+      tags:
+      - Welcome message
+swagger: "2.0"
